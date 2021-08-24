@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /googlefa4111ddefa80afa.html
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /*.gif$
+
+Sitemap: https://allaboutcrypto.w3spaces.com/sitemap.xml
