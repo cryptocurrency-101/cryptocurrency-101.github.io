@@ -40,7 +40,7 @@ header ul li a {
     font-family:round;
     font-size:20px;
     border-radius:15px;
-    width:inherit;
+    width:auto;
     height:30px;
 }
 @font-face {
