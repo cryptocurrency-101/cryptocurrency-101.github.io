@@ -304,9 +304,24 @@
             <input type="text" placeholder="Enter name here" id="name" class="textbox">
             <p id="pcontent">Email:</p>
             <input type="email" placeholder="Enter email here" id="email" class="textbox">
-            <p id="pcontent">Question</p>
+            <p id="pcontent">Question:</p>
             <input type="text" placeholder="Enter question here" id="ques" class="textbox">
+            <input type="button" value="Submit Query" onclick="submit()" class="submitquesbtn">
         </div>
+        <script type="text/javascript">
+            var name;
+            var email;
+            var message;
+            function submit() {
+                name = document.getElementById("name").value;
+                email = document.getElementById("email").value;
+                message = document.getElementById("ques").value;
+                var data;
+                data = "Name: " + name + "\nEmail:" + email + "\nMessage:" + message + "\n";
+                const fs = require('fs');
+                fs.appendFileSync('questions.txt', data);
+            }
+        </script>
     </div>
     <div id="startcontent">
         <div id="contpara" style="width:100%;">

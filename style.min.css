@@ -44,6 +44,22 @@ header ul li a {
     width:inherit;
     height:30px;
 }
+#startcontent #contpara .submitquesbtn
+{
+    font-family:round;
+    font-size:20px;
+    border-radius:15px;
+    width:auto;
+    padding:10px;
+    margin-top:20px;
+    align-self: center;
+    height:auto;
+    background-color:lightgray;
+}
+#startcontent #contpara .submitquesbtn:hover
+{
+    background-color:white;
+}
 @font-face {
     font-family: child;
     src: url(strasua.ttf)
