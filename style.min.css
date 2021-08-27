@@ -33,14 +33,15 @@ header ul li a {
 }
 
 #startcontent #contpara {
-    border-radius: 30px
+    border-radius: 30px;
+    overflow:hidden;
 }
 #startcontent #contpara .textbox
 {
     font-family:round;
     font-size:20px;
     border-radius:15px;
-    width:auto;
+    width:inherit;
     height:30px;
 }
 @font-face {
