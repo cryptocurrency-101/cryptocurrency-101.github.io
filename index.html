@@ -155,15 +155,20 @@
     </header>
     <center>
         <div id="breakingnews">
-            <img src="slideshow.jpg" class="slideshow" draggable="false" loading="lazy">
-            <img src="sliderimage1.jpg" class="slideshow" draggable="false" loading="lazy">
-            <img src="sliderimage2.jpg" class="slideshow" draggable="false" loading="lazy">
-            <img src="sliderimage3.jpg" class="slideshow" draggable="false" loading="lazy">
-            <img src="sliderimage4.jpeg" class="slideshow" draggable="false" loading="lazy">
-            <script>
-                w3.slideshow(".slideshow", 3000)
-            </script>
+            <div class="imgdiv"><button onclick="prev()" class="btn"><</button>
+                <img src="slideshow.jpg" class="slideshow" draggable="false" loading="lazy" width="300px">
+                <img src="sliderimage7.jpg_cropX1=0&cropX2=3629&cropY1=0&cropY2=2040" class="slideshow" draggable="false" loading="lazy" width="300px">
+            <img src="sliderimage1.jpg" class="slideshow" draggable="false" loading="lazy" width="300px">
+            <img src="sliderimage2.jpg" class="slideshow" draggable="false" loading="lazy" width="300px">
+            <img src="sliderimage3.jpg" class="slideshow" draggable="false" loading="lazy" width="300px">
+            <img src="sliderimage4.jpeg" class="slideshow" draggable="false" loading="lazy" width="300px">
+            <img src="sliderimage5.webp" class="slideshow" draggable="false" loading="lazy" width="300px">
+            <img src="sliderimage6.jpg_fit=scale" class="slideshow" draggable="false" loading="lazy" width="300px">
+            <button onclick="next()" class="btn">></button></div>
             <p id="pcontent" class="slidepara" style="text-align:center;"></p>
+            <p id="pcontent" class="slidepara">
+                <a>BREAKING NEWS:</a> CHINA BANS CRYPTO.
+            </p>
             <p id="pcontent" class="slidepara">
                 <a>BREAKING NEWS:</a> LIONEL MESSI joins the CRYPTO CRAZE as he gets part of the PSG fee in
                 digital tokens.
@@ -175,10 +180,27 @@
                 <a>BREAKING NEWS:</a> HIGHKART is one of the first E-COMERCE platforms to accept BITCOIN as payment.
             </p>
             <p id="pcontent" class="slidepara">
-                <a>BREAKING NEWS:</a> the CRYPTO HEIST HACKER returns most of the 600M STOLEN FUNDS.
+                <a>BREAKING NEWS:</a> the CRYPTO HEIST HACKER returns most of the 600M STOLEN FUNDS, and get a JOB as a CHEIF SECURItY OFFICER of a CRYPTO firm.
+            </p>
+            <p id="pcontent" class="slidepara">
+                <a>BREAKING NEWS:</a> TWITTER is going to make CRYPTO its NATIVE CURRENCY through TSD.
+            </p>
+            <p id="pcontent" class="slidepara">
+                <a>BREAKING NEWS:</a> EL SALVADOR adobts BITCOIN as CURRNECY.
             </p>
             <script>
-                w3.slideshow(".slidepara", 3000)
+                var slideshow_img = w3.slideshow(".slideshow",0);
+                var slideshow_para = w3.slideshow(".slidepara",0);
+                function next()
+                {
+                    slideshow_img.next();
+                    slideshow_para.next();
+                }
+                function prev()
+                {
+                    slideshow_img.previous();
+                    slideshow_para.previous();
+                }
             </script>
         </div>
     </center>
