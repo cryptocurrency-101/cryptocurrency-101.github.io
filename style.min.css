@@ -64,10 +64,10 @@ header ul li a {
     line-height: 30px;
     font-family: child;
     font-size: 10px;
-    background-color:gold;
+    background-color: gold;
     border-radius: 30px;
     box-shadow: 5px 5px 5px #000;
-    border:3px solid black;
+    border: 3px solid black;
 }
 
 .btn:hover {
@@ -94,10 +94,10 @@ header ul li a {
     }
     .btn {
         margin-top: 225px;
-        font-size:40px;
+        font-size: 40px;
     }
     .btn:hover {
-        margin-top:223px;
+        margin-top: 223px;
     }
     header h1 {
         height: inherit;
@@ -211,7 +211,7 @@ header ul li a {
             padding: 0
         }
         .imgdiv {
-            flex-direction: column;
+            flex-direction: row;
         }
         header ul li {
             width: 100%
@@ -244,6 +244,22 @@ header ul li a {
         #breakingnews .slideshow {
             width: inherit
         }
+        @media only screen and (max-width:900px) {
+            .imgdiv {
+                flex-direction: column;
+            }
+            .btn {
+                margin:0px;
+                font-size: 20px;
+                margin-left: 45%;
+                height: 35px;
+                line-height: 35px;
+            }
+            .btn:hover {
+                margin: 0px;
+                margin-left: 45%;
+            }
+        }
     }
 }
 
@@ -269,11 +285,11 @@ header ul li a {
         flex-direction: row;
     }
     .btn {
-        font-size:40px;
-        margin-top:150px;
+        font-size: 40px;
+        margin-top: 150px;
     }
     .btn:hover {
-        margin-top:148px;
+        margin-top: 148px;
     }
     header img {
         width: 30%;
@@ -420,14 +436,14 @@ header ul li a {
         flex-direction: column;
     }
     .btn {
-        font-size:20px;
-        margin-left:45%;
-        height:35px;
-        line-height:35px;
+        font-size: 20px;
+        margin-left: 45%;
+        height: 35px;
+        line-height: 35px;
     }
     .btn:hover {
-        margin:0px;
-        margin-left:45%;
+        margin: 0px;
+        margin-left: 45%;
     }
     header h1 a {
         text-decoration: none;
